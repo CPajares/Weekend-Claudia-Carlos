@@ -13,9 +13,10 @@ body {
 .container {
   color: grey;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: green;
   display: flex;
   align-items: center;
+  height: 100vh;
+  background-color: grey;
 
   .browser {
     background-color: $back-color;
@@ -35,7 +36,8 @@ body {
   }
 
   .main-title {
-    background-color: orange;
+    position: relative;
+    margin: 0 137.5px;
   }
 
   .main-content {
