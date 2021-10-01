@@ -10,24 +10,31 @@ body {
 
 .container {
   color: grey;
-  display: block;
   font-family: Arial, Helvetica, sans-serif;
   background-color: green;
+  display: flex;
+  align-items: center;
 }
 .container .browser {
-  background-color: red;
-  height: 20%;
-  width: 20%;
+  background-color: #f8f8f8;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.container .browser__links {
+  margin: 0 auto;
+  max-width: 325px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .container .main-title {
   background-color: orange;
-  height: 20%;
-  width: 20%;
 }
 .container .main-content {
   background-color: blue;
-  height: 20%;
-  width: 20%;
 }
 .container .footer {
   background-color: lightcoral;
