@@ -43,6 +43,9 @@ body {
 .container .main-content {
   background-color: blue;
 }
+.container .main-content .party__img-cake {
+  height: 125px;
+}
 .container .footer {
   background-color: lightcoral;
 }
