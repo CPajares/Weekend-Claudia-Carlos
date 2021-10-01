@@ -1,4 +1,4 @@
-//@import "variables";
+@import "variables";
 
 * {
   box-sizing: border-box;
@@ -12,13 +12,27 @@ body {
 
 .container {
   color: grey;
-  display: block;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
   height: 100vh;
   background-color: grey;
 
   .browser {
-    background-color: red;
+    background-color: $back-color;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    &__links {
+      margin: 0 auto;
+      max-width: 325px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .main-title {
