@@ -197,6 +197,9 @@ body {
   border: none;
   color: white;
 }
+.container .main-content .party__ver-mas:hover {
+  text-decoration: underline;
+}
 .container .footer {
   background-color: lightcoral;
 }
