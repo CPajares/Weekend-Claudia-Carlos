@@ -213,6 +213,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.container .footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
 .container .footer .delivery {
   width: 100%;
   min-width: 325px;
@@ -277,6 +282,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 15px;
 }
 .container .footer .contact__follow {
   display: flex;
@@ -290,6 +296,7 @@ body {
   margin: 0;
   font-size: 14px;
   color: #67635f;
+  font-weight: 400;
 }
 .container .footer .contact__h2 {
   padding: 55px 0 15px 0px;
@@ -330,6 +337,45 @@ body {
 }
 .container .footer .contact__youtube:hover {
   background-position-y: -574px;
+}
+.container .about {
+  margin-bottom: 90px;
+}
+.container .about h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.container .about__wrap {
+  margin-top: 35px;
+  height: 60.6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9px;
+  color: #ff5959;
+}
+.container .about__wrap:hover {
+  text-decoration: underline;
+}
+.container .about__develop {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -207px no-repeat;
+}
+.container .about__info {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -246px no-repeat;
+}
+.container .about__buy {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -285px no-repeat;
 }
 
 /*# sourceMappingURL=styles.css.map */
