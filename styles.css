@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -13,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-
 }
 .container .nav {
   background-color: #f8f8f8;
@@ -110,60 +110,92 @@ body {
   position: relative;
   padding: 50px;
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 .container .main-content {
-  background-color: grey;
   width: 100vw;
+  justify-content: flex-end;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.container .main-content__image {
+.container .main-content .party {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main-content .party__image {
   display: flex;
   justify-content: center;
+  margin-top: -70px;
   width: 318px;
 }
-.container .main-content__image-cake {
+.container .main-content .party__image-cake {
   height: 125px;
 }
-.container .main-content__wrap-fiesta {
-  width: 340px;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.container .main-content__title-fiesta {
+.container .main-content .party__title-fiesta {
   margin: 0;
   padding: 20px 0;
   line-height: 22px;
   font-size: 22px;
   font-weight: 900;
+  color: #2e2925;
   letter-spacing: 6px;
 }
-.container .main-content__text-fiesta {
+.container .main-content .party__text-fiesta {
   display: flex;
   justify-content: center;
   width: 218px;
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
   margin-bottom: 67px;
+  padding-top: 110px;
 }
-.container .main-content__home {
-  width: 340px;
-  height: 420px;
-  margin: 0 7.5px;
+.container .main-content .party__text-fiesta-wrap {
+  display: flex;
+  justify-content: center;
+  width: 218px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
-.container .main-content__fiestas-tematicas {
+.container .main-content .party__fiestas-tematicas {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
   width: 340px;
   height: 136.36px;
   overflow: hidden;
-  position: relative;
-  padding: 7.5px;
+  margin-top: 7.5px;
 }
-.container .main-content__fiestas-tematicas img {
-  width: 340px;
-  height: auto;
+.container .main-content .party__rainbow {
+  background-image: url("assets/fiestastematicas.jpg");
+  background-size: cover;
 }
-.container .main-content__fiestas-tematicas .main-content__second-title {
+.container .main-content .party__frozen {
+  background-image: url("assets/fiestaspersonajes.jpg");
+  background-size: cover;
+}
+.container .main-content .party__mirror {
+  background-image: url("assets/pompones.jpg");
+  background-size: cover;
+}
+.container .main-content .party__wrap-text {
   position: absolute;
-  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+.container .main-content .party__wrap-text h3 {
+  margin: 0;
+  padding: 20px;
+  color: #67635f;
+}
+.container .main-content .party__ver-mas {
+  width: 18¡70 0.2px;
+  height: 27.2 0.4px;
+  padding: 15px 30px;
+  background-color: #ff5959;
+  font-size: 18px;
+  margin-top: 55px;
+  border: none;
+  color: white;
 }
 .container .footer {
   background-color: lightcoral;
