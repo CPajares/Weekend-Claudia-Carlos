@@ -5,15 +5,14 @@
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-
 }
 .container .nav {
   background-color: #f8f8f8;
@@ -107,9 +106,16 @@ body {
   color: white;
 }
 .container .main-title {
-  position: relative;
+  width: 100vh;
   padding: 50px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.container .main-title__container {
+  min-width: 325px;
+  display: flex;
+  align-items: center;
 }
 .container .main-content {
   background-color: grey;
@@ -166,7 +172,72 @@ body {
   height: 80px;
 }
 .container .footer {
+  width: 100vw;
   background-color: lightcoral;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .footer .delivery {
+  width: 100%;
+  min-width: 325px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e8e6e5;
+}
+.container .footer .delivery__container {
+  max-width: 325px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #67625f;
+}
+.container .footer .delivery__container div {
+  padding: 40px 0;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.container .footer .delivery__container span {
+  margin-bottom: 25px;
+  height: 60px;
+}
+.container .footer .delivery__container h2 {
+  line-height: 18px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+.container .footer .delivery__container p {
+  line-height: 18px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.container .footer .delivery__free span {
+  width: 85px;
+  background: url(/assets/sprite.svg) 0 -38px no-repeat;
+}
+.container .footer .delivery__free:hover h2 {
+  color: #ff5959;
+}
+.container .footer .delivery__24h span {
+  width: 55px;
+  background: url(/assets/sprite.svg) -90px -38px no-repeat transparent;
+}
+.container .footer .delivery__return span {
+  width: 68px;
+  background: url(/assets/sprite.svg) -150px -36px no-repeat;
+}
+.container .footer .delivery__refund span {
+  width: 77px;
+  background: url(/assets/sprite.svg) -223px -38px no-repeat;
 }
 
 /*# sourceMappingURL=styles.css.map */
