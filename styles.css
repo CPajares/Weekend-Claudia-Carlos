@@ -8,12 +8,12 @@ body {
 }
 
 .container {
-  color: grey;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+
 }
 .container .nav {
   background-color: #f8f8f8;
@@ -111,8 +111,59 @@ body {
   padding: 50px;
   margin-top: 30px;
 }
-.container .main-content .party__img-cake {
+.container .main-content {
+  background-color: grey;
+  width: 100vw;
+}
+.container .main-content__image {
+  display: flex;
+  justify-content: center;
+  width: 318px;
+}
+.container .main-content__image-cake {
   height: 125px;
+}
+.container .main-content__wrap-fiesta {
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.container .main-content__title-fiesta {
+  margin: 0;
+  padding: 20px 0;
+  line-height: 22px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+.container .main-content__text-fiesta {
+  display: flex;
+  justify-content: center;
+  width: 218px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  margin-bottom: 67px;
+}
+.container .main-content__home {
+  width: 340px;
+  height: 420px;
+  margin: 0 7.5px;
+}
+.container .main-content__fiestas-tematicas {
+  width: 340px;
+  height: 136.36px;
+  overflow: hidden;
+  position: relative;
+  padding: 7.5px;
+}
+.container .main-content__fiestas-tematicas img {
+  width: 340px;
+  height: auto;
+}
+.container .main-content__fiestas-tematicas .main-content__second-title {
+  position: absolute;
+  height: 80px;
 }
 .container .footer {
   background-color: lightcoral;

@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  color: grey;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -125,8 +124,59 @@ body {
     margin-top: 30px;
   }
   .main-content {
-    .party__img-cake {
+    background-color: grey;
+    width: 100vw;
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      width: 318px;
+    }
+    &__image-cake {
       height: 125px;
+    }
+
+    &__wrap-fiesta {
+      width: 340px;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    &__title-fiesta {
+      margin: 0;
+      padding: 20px 0;
+      line-height: 22px;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 6px;
+    }
+    &__text-fiesta {
+      display: flex;
+      justify-content: center;
+      width: 218px;
+      border-top: 2px black solid;
+      border-bottom: 2px black solid;
+      margin-bottom: 67px;
+    }
+    &__home {
+      width: 340px;
+      height: 420px;
+      margin: 0 7.5px;
+    }
+    &__fiestas-tematicas {
+      width: 340px;
+      height: 136.36px;
+      overflow: hidden;
+      position: relative;
+      padding: 7.5px;
+      img {
+        width: 340px;
+        height: auto;
+      }
+      .main-content__second-title {
+        position: absolute;
+        height: 80px;
+      }
     }
   }
 
