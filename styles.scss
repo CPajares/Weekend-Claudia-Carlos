@@ -125,67 +125,101 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-
+    
     &__container {
       min-width: 325px;
       display: flex;
       align-items: center;
     }
+
   }
 
   .main-content {
-    background-color: grey;
     width: 100vw;
+    justify-content: flex-end;
+    font-family: $fontFamily;
+    .party {
+      background-color: $back-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    &__image {
-      display: flex;
-      justify-content: center;
-      width: 318px;
-    }
-    &__image-cake {
-      height: 125px;
-    }
-
-    &__wrap-fiesta {
-      width: 340px;
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-    }
-    &__title-fiesta {
-      margin: 0;
-      padding: 20px 0;
-      line-height: 22px;
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: 6px;
-    }
-    &__text-fiesta {
-      display: flex;
-      justify-content: center;
-      width: 218px;
-      border-top: 2px black solid;
-      border-bottom: 2px black solid;
-      margin-bottom: 67px;
-    }
-    &__home {
-      width: 340px;
-      height: 420px;
-      margin: 0 7.5px;
-    }
-    &__fiestas-tematicas {
-      width: 340px;
-      height: 136.36px;
-      overflow: hidden;
-      position: relative;
-      padding: 7.5px;
-      img {
-        width: 340px;
-        height: auto;
+      &__image {
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+        width: 318px;
       }
-      .main-content__second-title {
+      &__image-cake {
+        height: 125px;
+      }
+
+      &__title-fiesta {
+        margin: 0;
+        padding: 20px 0;
+        line-height: 22px;
+        font-size: 22px;
+        font-weight: 900;
+        color: #2e2925;
+        letter-spacing: 6px;
+      }
+      &__text-fiesta {
+        display: flex;
+        justify-content: center;
+        width: 218px;
+        margin-bottom: 67px;
+        padding-top: 110px;
+      }
+      &__text-fiesta-wrap {
+        display: flex;
+        justify-content: center;
+        width: 218px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+
+      &__fiestas-tematicas {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        width: 340px;
+        height: 136.36px;
+        overflow: hidden;
+        margin-top: 7.5px;
+      }
+      &__rainbow {
+        background-image: url("assets/fiestastematicas.jpg");
+        background-size: cover;
+      }
+      &__frozen {
+        background-image: url("assets/fiestaspersonajes.jpg");
+        background-size: cover;
+      }
+      &__mirror {
+        background-image: url("assets/pompones.jpg");
+        background-size: cover;
+      }
+      &__wrap-text {
         position: absolute;
-        height: 80px;
+        background-color: $backgroundColorPartyText;
+        z-index: 2;
+        h3 {
+          margin: 0;
+          padding: 20px;
+          color: $fontColor;
+        }
+      }
+
+      &__ver-mas {
+        width: 18¡70.2px;
+        height: 27.2.4px;
+        padding: 15px 30px;
+        background-color: $mainColor;
+        font-size: 18px;
+        margin-top: 55px;
+        border: none;
+        color: white;
       }
     }
   }
