@@ -108,7 +108,7 @@ body {
 }
 .container .main-title {
   width: 100vh;
-  padding: 50px;
+  padding: 50px 0 120px;
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -208,11 +208,15 @@ body {
 }
 .container .footer {
   width: 100vw;
-  background-color: lightcoral;
   margin-top: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container .footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
 }
 .container .footer .delivery {
   width: 100%;
@@ -289,6 +293,105 @@ body {
   width: 77px;
   background: url(/assets/sprite.svg) -223px -38px no-repeat;
 }
+.container .footer .contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.container .footer .contact__follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .footer .contact__follow h2 {
+  text-align: center;
+  width: 325px;
+  height: 16px;
+  margin: 0;
+  font-size: 14px;
+  color: #67635f;
+  font-weight: 400;
+}
+.container .footer .contact__h2 {
+  padding: 55px 0 15px 0px;
+}
+.container .footer .contact__wrap-icon {
+  display: flex;
+}
+.container .footer .contact__icon {
+  width: 33px;
+  height: 32px;
+}
+.container .footer .contact__facebook {
+  background: url("assets/sprite.svg") 0 -494px no-repeat;
+}
+.container .footer .contact__facebook:hover {
+  background-position-y: -574px;
+}
+.container .footer .contact__twiter {
+  background: url("assets/sprite.svg") -35px -494px no-repeat;
+}
+.container .footer .contact__twiter:hover {
+  background-position-y: -574px;
+}
+.container .footer .contact__instagram {
+  background: url("assets/sprite.svg") -70px -494px no-repeat;
+}
+.container .footer .contact__instagram:hover {
+  background-position-y: -574px;
+}
+.container .footer .contact__pinterest {
+  background: url("assets/sprite.svg") -106px -494px no-repeat;
+}
+.container .footer .contact__pinterest:hover {
+  background-position-y: -574px;
+}
+.container .footer .contact__youtube {
+  background: url("assets/sprite.svg") -176px -494px no-repeat;
+}
+.container .footer .contact__youtube:hover {
+  background-position-y: -574px;
+}
+.container .about {
+  margin-bottom: 90px;
+}
+.container .about h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.container .about__wrap {
+  margin-top: 35px;
+  height: 60.6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9px;
+  color: #ff5959;
+}
+.container .about__wrap:hover {
+  text-decoration: underline;
+}
+.container .about__develop {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -207px no-repeat;
+}
+.container .about__info {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -246px no-repeat;
+}
+.container .about__buy {
+  width: 30px;
+  height: 31px;
+  margin-bottom: 5px;
+  background: url("assets/sprite.svg") 0 -285px no-repeat;
+=======
 .container .footer .delivery__refund:hover {
   color: #ff5959;
 }
