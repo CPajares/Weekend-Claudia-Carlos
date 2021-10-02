@@ -9,13 +9,11 @@ body {
 }
 
 .container {
-  color: grey;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: grey;
   width: 600px;
 }
 .container .browser {
@@ -42,8 +40,37 @@ body {
   padding: 50px;
   margin-top: 30px;
 }
-.container .main-content .party__img-cake {
+.container .main-content {
+  background-color: grey;
+}
+.container .main-content__image {
+  display: flex;
+  justify-content: center;
+  width: 318px;
+}
+.container .main-content__image-cake {
   height: 125px;
+}
+.container .main-content__wrap-fiesta {
+  width: 318px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.container .main-content__title-fiesta {
+  margin: 0;
+  padding: 20px 0;
+  line-height: 22px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+.container .main-content__text-fiesta {
+  display: flex;
+  justify-content: center;
+  width: 218px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
 }
 .container .footer {
   background-color: lightcoral;
