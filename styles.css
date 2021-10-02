@@ -7,6 +7,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -301,9 +302,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.container .footer .form form {
+  border-top: 1px solid #bbb8b6;
+  border-bottom: 1px solid #bbb8b6;
   padding: 55px 0;
-  border-top: 2px #67635f;
-  border-bottom: 2px #67635f;
 }
 .container .footer .form input {
   width: 100%;
@@ -331,6 +334,9 @@ body {
   background: url(assets/sprite.svg) -313px -118px no-repeat;
   cursor: pointer;
 }
+.container .footer .form__check:active {
+  background-position-y: -145px;
+}
 .container .footer .form p {
   cursor: pointer;
 }
@@ -348,6 +354,9 @@ body {
   font-weight: 700;
   border: none;
 }
+.container .footer .form button:hover {
+  background-color: rgba(229, 89, 89, 0.5);
+}
 .container .footer .copyright {
   width: 100%;
   height: 50px;
@@ -362,16 +371,11 @@ body {
 }
 .container .footer .contact {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.container .footer .contact__follow {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 36px;
 }
-.container .footer .contact__follow h2 {
+.container .footer .contact h2 {
   text-align: center;
   width: 325px;
   height: 16px;

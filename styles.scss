@@ -8,6 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: $fontFamily;
+  overflow-x: hidden;
 }
 
 .container {
@@ -338,9 +339,12 @@ body {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 55px 0;
-      border-top: 2px $fontColor;
-      border-bottom: 2px $fontColor;
+
+      form {
+        border-top: 1px solid $backgroundColorLent;
+        border-bottom: 1px solid $backgroundColorLent;
+        padding: 55px 0;
+      }
 
       input {
         width: 100%;
@@ -368,6 +372,9 @@ body {
         padding-left: 35px;
         background: url(assets/sprite.svg) -313px -118px no-repeat;
         cursor: pointer;
+        &:active {
+          background-position-y: -145px;
+        }
       }
       p {
         cursor: pointer;
@@ -386,6 +393,9 @@ body {
         font-size: 14px;
         font-weight: 700;
         border: none;
+        &:hover {
+          background-color: rgba(229, 89, 89, 0.5);
+        }
       }
     }
 
@@ -404,24 +414,20 @@ body {
 
     .contact {
       display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 15px;
-      &__follow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 36px;
 
-        h2 {
-          text-align: center;
-          width: 325px;
-          height: 16px;
-          margin: 0;
-          font-size: 14px;
-          color: $fontColor;
-          font-weight: 400;
-        }
+      h2 {
+        text-align: center;
+        width: 325px;
+        height: 16px;
+        margin: 0;
+        font-size: 14px;
+        color: $fontColor;
+        font-weight: 400;
       }
+
       &__h2 {
         padding: 55px 0 15px 0px;
       }
