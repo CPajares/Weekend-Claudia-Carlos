@@ -125,13 +125,12 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    
+
     &__container {
       min-width: 325px;
       display: flex;
       align-items: center;
     }
-
   }
 
   .main-content {
@@ -286,27 +285,49 @@ body {
           width: 85px;
           background: url(/assets/sprite.svg) 0 -38px no-repeat;
         }
-
-        &:hover h2 {
+        &:hover {
           color: $mainColor;
+          span {
+            background-position-y: -109px;
+          }
         }
       }
+
       &__24h {
         span {
           width: 55px;
           background: url(/assets/sprite.svg) -90px -38px no-repeat transparent;
         }
+        &:hover {
+          color: $mainColor;
+          span {
+            background-position-y: -109px;
+          }
+        }
       }
+
       &__return {
         span {
           width: 68px;
           background: url(/assets/sprite.svg) -150px -36px no-repeat;
+        }
+        &:hover {
+          color: $mainColor;
+          span {
+            background-position-y: -109px;
+          }
         }
       }
       &__refund {
         span {
           width: 77px;
           background: url(/assets/sprite.svg) -223px -38px no-repeat;
+        }
+        &:hover {
+          color: $mainColor;
+          span {
+            background-position-y: -109px;
+          }
         }
       }
     }
