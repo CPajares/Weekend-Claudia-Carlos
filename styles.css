@@ -295,5 +295,17 @@ body {
 .container .footer .delivery__refund:hover span {
   background-position-y: -109px;
 }
+.container .footer .copyright {
+  width: 100%;
+  height: 50px;
+  background-color: #ff5959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+}
 
 /*# sourceMappingURL=styles.css.map */
