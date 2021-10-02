@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  width: 600px;
   min-height: 100vh;
 }
 
@@ -14,9 +13,9 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 600px;
+
 }
-.container .browser {
+.container .nav {
   background-color: #f8f8f8;
   height: 50px;
   top: 0;
@@ -27,13 +26,85 @@ body {
   display: flex;
   align-items: center;
 }
-.container .browser__links {
+.container .nav__links {
   margin: 0 auto;
   min-width: 325px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.container .nav__burger {
+  cursor: pointer;
+}
+.container .nav__person-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .nav__person-container:hover span {
+  background-position-x: -37px;
+}
+.container .nav__person {
+  width: 27px;
+  height: 27px;
+  background: url(/assets/sprite.svg) 0 0 no-repeat;
+}
+.container .nav__buy-group {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.container .nav__search {
+  width: 50px;
+  height: 50px;
+  background-color: #bbb8b6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav__search span {
+  width: 50px;
+  height: 50px;
+  background: url(/assets/sprite.svg) -304px 12px no-repeat;
+}
+.container .nav__buy {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav__buy:hover {
+  background-color: #ff5959;
+}
+.container .nav__buy:hover span {
+  background-position: -105px 10px;
+}
+.container .nav__buy span {
+  width: 50px;
+  height: 50px;
+  background: url(/assets/sprite.svg) -66px 10px no-repeat;
+}
+.container .nav__num {
+  width: 50px;
+  height: 50px;
+  background-color: #ff5959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav__num p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
 }
 .container .main-title {
   position: relative;

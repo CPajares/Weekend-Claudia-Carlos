@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-  width: 600px;
   min-height: 100vh;
 }
 
@@ -16,9 +15,8 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 600px;
 
-  .browser {
+  .nav {
     background-color: $back-color;
     height: 50px;
     top: 0;
@@ -28,6 +26,7 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
+
     &__links {
       margin: 0 auto;
       min-width: 325px;
@@ -35,6 +34,88 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &__burger {
+      cursor: pointer;
+    }
+
+    &__person-container {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover span {
+        background-position-x: -37px;
+      }
+    }
+
+    &__person {
+      width: 27px;
+      height: 27px;
+      background: url(/assets/sprite.svg) 0 0 no-repeat;
+    }
+
+    &__buy-group {
+      width: 150px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__search {
+      width: 50px;
+      height: 50px;
+      background-color: $backgroundColorLent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        width: 50px;
+        height: 50px;
+        background: url(/assets/sprite.svg) -304px 12px no-repeat;
+      }
+    }
+
+    &__buy {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $mainColor;
+      }
+      &:hover span {
+        background-position: -105px 10px;
+      }
+
+      span {
+        width: 50px;
+        height: 50px;
+        background: url(/assets/sprite.svg) -66px 10px no-repeat;
+      }
+    }
+
+    &__num {
+      width: 50px;
+      height: 50px;
+      background-color: $mainColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
     }
   }
   .main-title {
