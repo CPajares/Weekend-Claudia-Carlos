@@ -520,4 +520,28 @@ body {
       }
     }
   }
+  .main-content {
+    .party {
+      &__wrap-images {
+        display: flex;
+      }
+      &__wrap-desktop {
+        display: flex;
+        flex-direction: column;
+      }
+      &__rainbow {
+        width: 628.32 px;
+        height: 263 px;
+      }
+      &__frozen {
+        width: 628.32px;
+        height: 263px;
+      }
+      &__mirror {
+        width: 306.66px;
+        height: 538 px;
+        border: 2px solid black;
+      }
+    }
+  }
 }
