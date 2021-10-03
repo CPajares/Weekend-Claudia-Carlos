@@ -1,0 +1,87 @@
+@import "variables";
+
+@mixin brands {
+  @media (min-width: 600px) {
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 67px;
+        padding-top: 110px;
+      }
+
+      &__titleDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__title {
+        margin: 0;
+        padding: 20px 0;
+        font-weight: 900;
+        color: #2e2925;
+        letter-spacing: 6px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        letter-spacing: 10px;
+      }
+
+      &__line {
+        width: 280px;
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+
+      &__list {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: calc(1080px + 30px);
+
+        li {
+          height: 75px;
+          cursor: pointer;
+          margin: 15px;
+          opacity: 0.8;
+          img {
+            height: 75px;
+            width: auto;
+            filter: grayscale(100%);
+            &:hover {
+              filter: none;
+            }
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      &__ver-mas {
+        padding: 15px 30px;
+        background-color: $mainColor;
+        font-size: 18px;
+        margin-top: 55px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        line-height: 28px;
+      }
+
+      &__ver-mas:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
