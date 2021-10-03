@@ -400,6 +400,9 @@ body {
   width: 100%;
   height: 40px;
 }
+.container .footer .form__button-desktop {
+  display: none;
+}
 .container .footer .form__title {
   font-size: 14px;
   line-height: 16px;
@@ -571,6 +574,95 @@ body {
   width: 306.66px;
   height: 538 px;
   border: 2px solid black;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .footer .wrap-contact-web {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 56px;
+    margin-top: 20px;
+  }
+  .container .footer .wrap-contact-web .contact {
+    width: 236px;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-right: 1px solid #bbb8b6;
+  }
+  .container .footer .wrap-contact-web .contact h2 {
+    margin-top: -40px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .container .footer .wrap-contact-web .contact__wrap-icon {
+    margin-top: -30px;
+  }
+  .container .footer .wrap-contact-web .form {
+    width: 475px;
+    height: 147px;
+    color: #67635f;
+  }
+  .container .footer .wrap-contact-web .form form {
+    width: 475px;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+  .container .footer .wrap-contact-web .form__button-desktop {
+    display: block;
+    width: 124.98px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+  .container .footer .wrap-contact-web .form__button-mobile {
+    display: none;
+  }
+  .container .footer .wrap-contact-web .form__wrap-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .container .footer .wrap-contact-web .form__title {
+    text-align: start;
+    width: 375px;
+    height: 16px;
+    padding: 20px 0;
+  }
+  .container .footer .wrap-contact-web .form__email {
+    width: 220.98px;
+    height: 38px;
+  }
+  .container .footer .wrap-contact-web .about {
+    width: 196.5px;
+    height: 147px;
+    padding: 15px 25px;
+    border-left: 1px solid #bbb8b6;
+  }
+  .container .footer .wrap-contact-web .about__wrap {
+    width: 216.5px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .container .footer .wrap-contact-web .about__wrap .about__develop {
+    margin-right: 5px;
+  }
+  .container .footer .wrap-contact-web .about__wrap .about__info {
+    margin-right: 5px;
+  }
+  .container .footer .wrap-contact-web .about__wrap .about__buy {
+    margin-right: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
