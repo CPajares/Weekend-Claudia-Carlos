@@ -1,0 +1,18 @@
+@import "variables";
+
+@mixin delivery {
+  @media (min-width: 600px) {
+    .delivery {
+      &__container {
+        min-width: $ComputerWidth;
+        flex-wrap: nowrap;
+        padding: 48px 0;
+
+        div {
+          width: 25%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

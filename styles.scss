@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin-delivery";
 
 * {
   box-sizing: border-box;
@@ -314,7 +315,7 @@ body {
         &:hover {
           color: $mainColor;
           span {
-            background-position-y: -109px;
+            background-position-y: -107px;
           }
         }
       }
@@ -331,6 +332,8 @@ body {
         }
       }
     }
+
+    @include delivery();
 
     .form {
       width: 100%;
