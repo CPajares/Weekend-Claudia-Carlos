@@ -463,5 +463,25 @@ body {
   margin-bottom: 5px;
   background: url("assets/sprite.svg") 0 -285px no-repeat;
 }
+.container .main-content .party__wrap-images {
+  display: flex;
+}
+.container .main-content .party__wrap-desktop {
+  display: flex;
+  flex-direction: column;
+}
+.container .main-content .party__rainbow {
+  width: 628.32 px;
+  height: 263 px;
+}
+.container .main-content .party__frozen {
+  width: 628.32px;
+  height: 263px;
+}
+.container .main-content .party__mirror {
+  width: 306.66px;
+  height: 538 px;
+  border: 2px solid black;
+}
 
 /*# sourceMappingURL=styles.css.map */
