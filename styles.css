@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -92,7 +91,7 @@ body {
 .container .nav__buy span {
   width: 50px;
   height: 50px;
-  background: url(/assets/sprite.svg) -66px 10px no-repeat;
+  background: url(assets/sprite.svg) -66px 10px no-repeat;
 }
 .container .nav__num {
   width: 50px;
@@ -195,17 +194,95 @@ body {
   color: #67635f;
 }
 .container .main-content .party__ver-mas {
-  width: 18¡70 0.2px;
-  height: 27.2 0.4px;
   padding: 15px 30px;
   background-color: #ff5959;
   font-size: 18px;
   margin-top: 55px;
   border: none;
   color: white;
+  cursor: pointer;
+  line-height: 28px;
 }
 .container .main-content .party__ver-mas:hover {
   text-decoration: underline;
+}
+.container .main-content .brand {
+  display: none;
+}
+@media (min-width: 600px) {
+  .container .main-content .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .main-content .brand__text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 67px;
+    padding-top: 110px;
+  }
+  .container .main-content .brand__titleDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main-content .brand__title {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 900;
+    color: #2e2925;
+    letter-spacing: 6px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  .container .main-content .brand__line {
+    width: 280px;
+    height: 2px;
+    background-color: black;
+    border: none;
+  }
+  .container .main-content .brand__list {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: calc(1080px + 30px);
+  }
+  .container .main-content .brand__list li {
+    height: 75px;
+    cursor: pointer;
+    margin: 15px;
+    opacity: 0.8;
+  }
+  .container .main-content .brand__list li img {
+    height: 75px;
+    width: auto;
+    filter: grayscale(100%);
+  }
+  .container .main-content .brand__list li img:hover {
+    filter: none;
+  }
+  .container .main-content .brand__list li:hover {
+    opacity: 1;
+  }
+  .container .main-content .brand__ver-mas {
+    padding: 15px 30px;
+    background-color: #ff5959;
+    font-size: 18px;
+    margin-top: 55px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    line-height: 28px;
+  }
+  .container .main-content .brand__ver-mas:hover {
+    text-decoration: underline;
+  }
 }
 .container .footer {
   width: 100vw;
