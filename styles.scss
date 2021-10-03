@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixin-delivery";
+@import "mixin-brands";
 
 * {
   box-sizing: border-box;
@@ -100,7 +102,7 @@ body {
       span {
         width: 50px;
         height: 50px;
-        background: url(/assets/sprite.svg) -66px 10px no-repeat;
+        background: url(assets/sprite.svg) -66px 10px no-repeat;
       }
     }
 
@@ -212,19 +214,24 @@ body {
       }
 
       &__ver-mas {
-        width: 18¡70.2px;
-        height: 27.2.4px;
         padding: 15px 30px;
         background-color: $mainColor;
         font-size: 18px;
         margin-top: 55px;
         border: none;
         color: white;
+        cursor: pointer;
+        line-height: 28px;
       }
       &__ver-mas:hover {
         text-decoration: underline;
       }
     }
+
+    .brand {
+      display: none;
+    }
+    @include brands();
   }
 
   .footer {
@@ -314,7 +321,7 @@ body {
         &:hover {
           color: $mainColor;
           span {
-            background-position-y: -109px;
+            background-position-y: -107px;
           }
         }
       }
@@ -331,6 +338,8 @@ body {
         }
       }
     }
+
+    @include delivery();
 
     .form {
       width: 100%;
