@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "extend-contacto";
+
 * {
   box-sizing: border-box;
 }
