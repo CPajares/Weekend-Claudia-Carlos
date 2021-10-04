@@ -1,0 +1,8 @@
+@mixin header {
+  @media screen and (min-width: 600px) {
+    .main-title {
+      background-color: yellow;
+      min-width: 1080px;
+    }
+  }
+}

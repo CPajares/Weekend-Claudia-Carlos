@@ -3,6 +3,7 @@
 @import "mixin-brands";
 @import "mixin-party";
 @import "mixin-contact";
+@import "mixin-header";
 
 * {
   box-sizing: border-box;
@@ -539,4 +540,5 @@ body {
   }
 }
 
-@include contact();
+@include contact;
+@include header;
