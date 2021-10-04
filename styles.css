@@ -25,9 +25,11 @@ body {
   position: fixed;
   display: flex;
   align-items: center;
+
 }
 .container .nav__banderas {
   display: none;
+
 }
 .container .nav__links {
   margin: 0 auto;
@@ -40,7 +42,11 @@ body {
 .container .nav__burger {
   cursor: pointer;
 }
+
+.container .nav__person-container {
+
 .container .nav__person {
+
   width: 50px;
   height: 50px;
   display: flex;
@@ -48,20 +54,29 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
+.container .nav__person-container:hover span {
+  background-position-x: -37px;
+}
+.container .nav__person {
+
 .container .nav__person:hover span {
   background-position-x: -37px;
 }
 .container .nav__person-img {
+
   width: 27px;
   height: 27px;
   background: url(/assets/sprite.svg) 0 0 no-repeat;
 }
+
 .container .nav__person-enter {
   display: none;
 }
 .container .nav__media {
   display: none;
 }
+
 .container .nav__buy-group {
   width: 150px;
   height: 50px;
@@ -115,6 +130,7 @@ body {
   font-size: 20px;
   color: white;
 }
+
 @media (min-width: 600px) {
   .container .nav__burger {
     display: none;
@@ -224,12 +240,17 @@ body {
     width: 100px;
   }
 }
+
 .container .main-title {
   width: 100vw;
   padding: 50px 0 120px;
   margin-top: 30px;
   display: flex;
   justify-content: center;
+
+}
+.container .main-title__logo-desktop {
+  display: none;
 }
 .container .main-title__container {
   min-width: 325px;
@@ -273,8 +294,7 @@ body {
   padding-top: 110px;
 }
 .container .main-content .party__wrap-text:hover {
-  -webkit-text-decoration-color: #67635f;
-          text-decoration-color: #67635f;
+  text-decoration-color: #67635f;
 }
 .container .main-content .party__text-fiesta-wrap {
   display: flex;
@@ -348,8 +368,7 @@ body {
     width: 100px;
     height: 159.5px;
     background-color: rgba(255, 255, 255, 0.8);
-    -webkit-clip-path: polygon(0% 0, 0 100%, 100% 100%);
-            clip-path: polygon(0% 0, 0 100%, 100% 100%);
+    clip-path: polygon(0% 0, 0 100%, 100% 100%);
   }
   .container .main-content .party__parrafo-fiesta {
     font-size: 14px;
@@ -424,6 +443,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-width: calc(1080px + 30px);
+
   }
   .container .main-content .brand__list li {
     height: 75px;
@@ -608,8 +628,7 @@ body {
   cursor: pointer;
 }
 .container .footer .form__privacy-style {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .container .footer .form button {
   height: 40px;
@@ -819,4 +838,130 @@ body {
   .container .footer .wrap-contact-web .about__wrap .about__buy {
     margin-right: 5px;
   }
-}/*# sourceMappingURL=styles.css.map */
+
+}
+@media screen and (min-width: 600px) {
+  .container .main-title {
+    min-width: 1080px;
+    display: flex;
+    justify-content: start;
+  }
+  .container .main-title__text-novedades {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__text-oferta {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__buscas {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__lupa {
+    width: 49px;
+    height: 29, 6px;
+    border: 1px solid black;
+  }
+  .container .main-title__wrap-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    height: 198px;
+  }
+  .container .main-title__wrap-novedades-icons {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container .main-title__icon-utensilios {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/utensilios.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-utensilios:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-ingredientes {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/magdalena.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-ingredientes:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-fiestas {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/tarta-cumpleanos.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-fiestas:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-marcas {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/delantal.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-marcas:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-bocadillo {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+    background-size: 560px;
+    width: 80px;
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-bocadillo:hover {
+    background-color: #e8e6e5;
+  }
+  .container .main-title__wrap-icon {
+    display: flex;
+    width: 446px;
+    height: 80px;
+    justify-content: space-evenly;
+  }
+  .container .main-title__wrap {
+    display: flex;
+  }
+  .container .main-title__novedades {
+    display: flex;
+    width: 446px;
+    justify-content: space-between;
+  }
+  .container .main-title__logo-desktop {
+    display: flex;
+    margin-left: 50px;
+  }
+  .container .main-title__logo-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
+
