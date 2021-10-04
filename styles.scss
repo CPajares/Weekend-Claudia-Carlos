@@ -2,7 +2,7 @@
 @import "mixin-delivery";
 @import "mixin-brands";
 @import "mixin-party";
-@import "mixin-conctact";
+@import "mixin-contact";
 
 * {
   box-sizing: border-box;
@@ -534,8 +534,7 @@ body {
         background: url("assets/sprite.svg") 0 -285px no-repeat;
       }
     }
-    @include contact();
   }
-
 }
 
+@include contact();
