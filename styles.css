@@ -154,6 +154,10 @@ body {
   margin-bottom: 67px;
   padding-top: 110px;
 }
+.container .main-content .party__wrap-text:hover {
+  text-decoration: underline;
+  text-decoration-color: #67635f;
+}
 .container .main-content .party__text-fiesta-wrap {
   display: flex;
   justify-content: center;
