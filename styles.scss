@@ -172,6 +172,10 @@ body {
         margin-bottom: 67px;
         padding-top: 110px;
       }
+      &__wrap-text:hover {
+        text-decoration: underline;
+        text-decoration-color: $fontColor;
+      }
       &__text-fiesta-wrap {
         display: flex;
         justify-content: center;
