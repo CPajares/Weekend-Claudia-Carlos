@@ -251,7 +251,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: calc(1080px + 30px);
+    max-width: 1110px;
   }
   .container .main-content .brand__list li {
     height: 75px;
@@ -432,8 +432,7 @@ body {
   cursor: pointer;
 }
 .container .footer .form__privacy-style {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .container .footer .form button {
   height: 40px;
@@ -554,26 +553,6 @@ body {
   height: 31px;
   margin-bottom: 5px;
   background: url("assets/sprite.svg") 0 -285px no-repeat;
-}
-.container .main-content .party__wrap-images {
-  display: flex;
-}
-.container .main-content .party__wrap-desktop {
-  display: flex;
-  flex-direction: column;
-}
-.container .main-content .party__rainbow {
-  width: 628.32 px;
-  height: 263 px;
-}
-.container .main-content .party__frozen {
-  width: 628.32px;
-  height: 263px;
-}
-.container .main-content .party__mirror {
-  width: 306.66px;
-  height: 538 px;
-  border: 2px solid black;
 }
 
 @media only screen and (min-width: 600px) {
