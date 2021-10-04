@@ -4,8 +4,6 @@
 @import "mixin-party";
 @import "mixin-conctact";
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -214,10 +212,15 @@ body {
         position: absolute;
         background-color: $backgroundColorPartyText;
         z-index: 1;
+        cursor: pointer;
         h3 {
           margin: 0;
           padding: 20px;
           color: $fontColor;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
@@ -534,4 +537,5 @@ body {
     @include contact();
   }
 
+}
 
