@@ -94,6 +94,10 @@ body {
   display: none;
 }
 
+.container .nav__media {
+  display: none;
+}
+
 .container .nav__buy-group {
   width: 150px;
   height: 50px;
@@ -226,6 +230,41 @@ body {
   }
   .container .nav__search {
     display: none;
+  }
+  .container .nav__media {
+    display: flex;
+    align-items: center;
+  }
+  .container .nav__media-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container .nav__media-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .nav__media-list span {
+    width: 25px;
+    height: 20px;
+    margin: 0 7px;
+  }
+  .container .nav__facebook {
+    background: url(assets/sprite.svg) -4px -540px no-repeat;
+  }
+  .container .nav__twitter {
+    background: url(assets/sprite.svg) -40px -540px no-repeat;
+  }
+  .container .nav__instagram {
+    background: url(assets/sprite.svg) -75px -540px no-repeat;
+  }
+  .container .nav__pinterest {
+    background: url(assets/sprite.svg) -110px -540px no-repeat;
+  }
+  .container .nav__youtube {
+    background: url(assets/sprite.svg) -180px -540px no-repeat;
   }
 }
 
@@ -450,9 +489,6 @@ body {
     margin-left: 10px;
     width: 306.66px;
     height: auto;
-  }
-  .container .main-content .party__search {
-    display: none;
   }
 }
 

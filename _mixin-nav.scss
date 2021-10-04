@@ -47,6 +47,7 @@
       &__person-enter {
         display: block;
       }
+
       &__person {
         display: flex;
         width: 200px;
@@ -56,6 +57,47 @@
 
       &__search {
         display: none;
+      }
+
+      &__media {
+        display: flex;
+        align-items: center;
+      }
+
+      &__media-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        span {
+          width: 25px;
+          height: 20px;
+          margin: 0 7px;
+        }
+      }
+
+      &__facebook {
+        background: url(assets/sprite.svg) -4px -540px no-repeat;
+      }
+
+      &__twitter {
+        background: url(assets/sprite.svg) -40px -540px no-repeat;
+      }
+      &__instagram {
+        background: url(assets/sprite.svg) -75px -540px no-repeat;
+      }
+      &__pinterest {
+        background: url(assets/sprite.svg) -110px -540px no-repeat;
+      }
+      &__youtube {
+        background: url(assets/sprite.svg) -180px -540px no-repeat;
       }
     }
   }
