@@ -26,6 +26,9 @@ body {
   display: flex;
   align-items: center;
 }
+.container .nav__banderas {
+  display: none;
+}
 .container .nav__links {
   margin: 0 auto;
   min-width: 325px;
@@ -37,7 +40,7 @@ body {
 .container .nav__burger {
   cursor: pointer;
 }
-.container .nav__person-container {
+.container .nav__person {
   width: 50px;
   height: 50px;
   display: flex;
@@ -45,13 +48,16 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.container .nav__person-container:hover span {
+.container .nav__person:hover span {
   background-position-x: -37px;
 }
-.container .nav__person {
+.container .nav__person-img {
   width: 27px;
   height: 27px;
   background: url(/assets/sprite.svg) 0 0 no-repeat;
+}
+.container .nav__person-enter {
+  display: none;
 }
 .container .nav__buy-group {
   width: 150px;
@@ -106,6 +112,56 @@ body {
   font-size: 20px;
   color: white;
 }
+@media (min-width: 600px) {
+  .container .nav__burger {
+    display: none;
+  }
+  .container .nav__links {
+    min-width: 1080px;
+    margin-left: 50px;
+  }
+  .container .nav__banderas {
+    display: flex;
+    top: 0;
+  }
+  .container .nav__banderas-1 {
+    background-color: #ff5959;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 125px;
+    width: 75px;
+  }
+  .container .nav__banderas-2 {
+    background-color: #6199af;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 4px;
+    height: 70px;
+    width: 60px;
+  }
+  .container .nav__banderas-3 {
+    background-color: #f6b436;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70px;
+    width: 60px;
+  }
+  .container .nav__person-enter {
+    display: block;
+  }
+  .container .nav__person {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .nav__search {
+    display: none;
+  }
+}
 .container .main-title {
   width: 100vw;
   padding: 50px 0 120px;
@@ -156,7 +212,8 @@ body {
 }
 .container .main-content .party__wrap-text:hover {
   text-decoration: underline;
-  text-decoration-color: #67635f;
+  -webkit-text-decoration-color: #67635f;
+          text-decoration-color: #67635f;
 }
 .container .main-content .party__text-fiesta-wrap {
   display: flex;
@@ -235,6 +292,9 @@ body {
     width: 306.66px;
     height: auto;
   }
+  .container .main-content .party__search {
+    display: none;
+  }
 }
 .container .main-content .brand {
   display: none;
@@ -281,7 +341,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1110px;
+    max-width: calc(1080px + 30px);
   }
   .container .main-content .brand__list li {
     height: 75px;
@@ -412,6 +472,10 @@ body {
     width: 25%;
     padding: 0;
   }
+  .container .footer .delivery__container h2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 .container .footer .form {
   width: 100%;
@@ -462,7 +526,8 @@ body {
   cursor: pointer;
 }
 .container .footer .form__privacy-style {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 .container .footer .form button {
   height: 40px;
@@ -672,6 +737,4 @@ body {
   .container .footer .wrap-contact-web .about__wrap .about__buy {
     margin-right: 5px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,62 @@
+@import "variables";
+
+@mixin nav {
+  @media (min-width: 600px) {
+    .nav {
+      &__burger {
+        display: none;
+      }
+
+      &__links {
+        min-width: $ComputerWidth;
+        margin-left: 50px;
+      }
+
+      &__banderas {
+        display: flex;
+        //position: absolute;
+        top: 0;
+        //margin-left: 50px;
+      }
+      &__banderas-1 {
+        background-color: $mainColor;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 125px;
+        width: 75px;
+      }
+      &__banderas-2 {
+        background-color: #6199af;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0 4px;
+        height: 70px;
+        width: 60px;
+      }
+      &__banderas-3 {
+        background-color: #f6b436;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 70px;
+        width: 60px;
+      }
+
+      &__person-enter {
+        display: block;
+      }
+      &__person {
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__search {
+        display: none;
+      }
+    }
+  }
+}
