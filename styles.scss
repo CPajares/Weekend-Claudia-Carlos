@@ -131,6 +131,9 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    &__logo-desktop {
+      display: none;
+    }
 
     &__container {
       min-width: 325px;

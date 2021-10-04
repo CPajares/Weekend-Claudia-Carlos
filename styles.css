@@ -113,6 +113,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.container .main-title__logo-desktop {
+  display: none;
+}
 .container .main-title__container {
   min-width: 325px;
   display: flex;
@@ -696,9 +699,125 @@ body {
   }
 }
 @media screen and (min-width: 600px) {
-  .main-title {
-    background-color: yellow;
+  .container .main-title {
     min-width: 1080px;
+    display: flex;
+    justify-content: start;
+  }
+  .container .main-title__text-novedades {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__text-oferta {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__buscas {
+    width: 122px;
+    height: 29.6px;
+    border: 1px solid black;
+  }
+  .container .main-title__lupa {
+    width: 49px;
+    height: 29, 6px;
+    border: 1px solid black;
+  }
+  .container .main-title__wrap-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    height: 198px;
+  }
+  .container .main-title__wrap-novedades-icons {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container .main-title__icon-utensilios {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/utensilios.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-utensilios:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-ingredientes {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/magdalena.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-ingredientes:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-fiestas {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/tarta-cumpleanos.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-fiestas:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-marcas {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/delantal.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #e8e6e5;
+  }
+  .container .main-title__icon-marcas:hover {
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-bocadillo {
+    width: 80px;
+    height: 80px;
+    background-image: url("assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+    background-size: 560px;
+    width: 80px;
+    background-color: #ff5959;
+  }
+  .container .main-title__icon-bocadillo:hover {
+    background-color: #e8e6e5;
+  }
+  .container .main-title__wrap-icon {
+    display: flex;
+    width: 446px;
+    height: 80px;
+    justify-content: space-evenly;
+  }
+  .container .main-title__wrap {
+    display: flex;
+  }
+  .container .main-title__novedades {
+    display: flex;
+    width: 446px;
+    justify-content: space-between;
+  }
+  .container .main-title__logo-desktop {
+    display: flex;
+    margin-left: 50px;
+  }
+  .container .main-title__logo-mobile {
+    display: none;
   }
 }
 
