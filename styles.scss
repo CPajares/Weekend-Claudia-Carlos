@@ -213,11 +213,10 @@ body {
         background-color: $backgroundColorPartyText;
         z-index: 1;
         cursor: pointer;
+        padding: 20px;
+        color: $fontColor;
         h3 {
           margin: 0;
-          padding: 20px;
-          color: $fontColor;
-
           &:hover {
             text-decoration: underline;
           }
