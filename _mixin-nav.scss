@@ -50,7 +50,6 @@
         justify-content: center;
         height: 70px;
         width: 70px;
-
         &:hover {
           height: 140px;
         }
@@ -68,6 +67,9 @@
         width: auto;
         justify-content: space-between;
         align-items: center;
+        &:hover p {
+          color: $mainColor;
+        }
       }
 
       &__person-img {
