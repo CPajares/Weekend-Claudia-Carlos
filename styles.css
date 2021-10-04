@@ -202,6 +202,9 @@ body {
     height: 20px;
     margin: 0 7px;
   }
+  .container .nav__media-list span:hover {
+    background-position-y: -500px;
+  }
   .container .nav__facebook {
     background: url(assets/sprite.svg) -4px -540px no-repeat;
   }
