@@ -1,29 +1,27 @@
 @import "variables";
 
-@mixin brands {
+@mixin party {
   @media (min-width: 600px) {
-    .main-content {
-      .party {
-        &__wrap-images {
-          display: flex;
-        }
-        &__wrap-desktop {
-          display: flex;
-          flex-direction: column;
-        }
-        &__rainbow {
-          width: auto;
-          height: 263px;
-        }
-        &__frozen {
-          width: 628.32px;
-          height: 263px;
-        }
-        &__mirror {
-          margin-left: 10px;
-          width: 306.66px;
-          height: auto;
-        }
+    .party {
+      &__wrap-images {
+        display: flex;
+      }
+      &__wrap-desktop {
+        display: flex;
+        flex-direction: column;
+      }
+      &__rainbow {
+        width: auto;
+        height: 263px;
+      }
+      &__frozen {
+        width: 628.32px;
+        height: 263px;
+      }
+      &__mirror {
+        margin-left: 10px;
+        width: 306.66px;
+        height: auto;
       }
     }
   }
