@@ -175,7 +175,6 @@ body {
         padding-top: 110px;
       }
       &__wrap-text:hover {
-        text-decoration: underline;
         text-decoration-color: $fontColor;
       }
       &__text-fiesta-wrap {
@@ -209,19 +208,22 @@ body {
         background-size: cover;
       }
       &__wrap-text {
-        position: absolute;
+        position: flex;
         background-color: $backgroundColorPartyText;
         z-index: 1;
         cursor: pointer;
+        padding: 20px;
+        color: $fontColor;
         h3 {
-          margin: 0;
-          padding: 20px;
-          color: $fontColor;
-
-          &:hover {
-            text-decoration: underline;
-          }
+          margin-bottom: 5px;
+          font-size: 18px;
         }
+        h3:hover {
+          text-decoration: underline;
+        }
+      }
+      &__parrafo-fiesta {
+        display: none;
       }
 
       &__ver-mas {
