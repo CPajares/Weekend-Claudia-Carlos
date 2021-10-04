@@ -250,7 +250,6 @@ body {
 }
 
 .container .main-content .party__wrap-text:hover {
-  text-decoration: underline;
   -webkit-text-decoration-color: #67635f;
           text-decoration-color: #67635f;
 }
