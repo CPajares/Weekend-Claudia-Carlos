@@ -1,0 +1,131 @@
+@import "variables";
+
+@mixin nav {
+  @media (min-width: 600px) {
+    .nav {
+      &__burger {
+        display: none;
+      }
+
+      &__links {
+        min-width: $ComputerWidth;
+        //margin-left: 50px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+      }
+
+      &__banderas {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &__banderas-1 {
+        background-color: $mainColor;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 140px;
+        width: 80px;
+      }
+      &__banderas-2 {
+        background-color: #6199af;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0 4px;
+        height: 70px;
+        width: 70px;
+
+        &:hover {
+          height: 140px;
+        }
+      }
+
+      &__banderas-3 {
+        background-color: #f6b436;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 70px;
+        width: 70px;
+        &:hover {
+          height: 140px;
+        }
+      }
+
+      &__person-enter {
+        display: block;
+        font-weight: 400;
+        color: #2e2925;
+        font-size: 13px;
+      }
+
+      &__person {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        &:hover p {
+          color: $mainColor;
+        }
+      }
+
+      &__person-img {
+        margin-right: 10px;
+      }
+
+      &__search {
+        display: none;
+      }
+
+      &__media {
+        display: flex;
+        align-items: center;
+        width: 275px;
+      }
+
+      &__media-list {
+        list-style: none;
+        display: flex;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        span {
+          width: 25px;
+          height: 20px;
+          margin: 0 7px;
+          &:hover {
+            background-position-y: -500px;
+          }
+        }
+      }
+
+      &__facebook {
+        background: url(assets/sprite.svg) -4px -540px no-repeat;
+      }
+
+      &__twitter {
+        background: url(assets/sprite.svg) -40px -540px no-repeat;
+      }
+      &__instagram {
+        background: url(assets/sprite.svg) -75px -540px no-repeat;
+      }
+      &__pinterest {
+        background: url(assets/sprite.svg) -110px -540px no-repeat;
+      }
+      &__youtube {
+        background: url(assets/sprite.svg) -180px -540px no-repeat;
+      }
+
+      &__buy-group {
+        width: 100px;
+      }
+    }
+  }
+}

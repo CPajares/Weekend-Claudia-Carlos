@@ -25,6 +25,11 @@ body {
   position: fixed;
   display: flex;
   align-items: center;
+
+}
+.container .nav__banderas {
+  display: none;
+
 }
 .container .nav__links {
   margin: 0 auto;
@@ -37,7 +42,11 @@ body {
 .container .nav__burger {
   cursor: pointer;
 }
+
 .container .nav__person-container {
+
+.container .nav__person {
+
   width: 50px;
   height: 50px;
   display: flex;
@@ -45,14 +54,29 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
 .container .nav__person-container:hover span {
   background-position-x: -37px;
 }
 .container .nav__person {
+
+.container .nav__person:hover span {
+  background-position-x: -37px;
+}
+.container .nav__person-img {
+
   width: 27px;
   height: 27px;
   background: url(/assets/sprite.svg) 0 0 no-repeat;
 }
+
+.container .nav__person-enter {
+  display: none;
+}
+.container .nav__media {
+  display: none;
+}
+
 .container .nav__buy-group {
   width: 150px;
   height: 50px;
@@ -106,12 +130,124 @@ body {
   font-size: 20px;
   color: white;
 }
+
+@media (min-width: 600px) {
+  .container .nav__burger {
+    display: none;
+  }
+  .container .nav__links {
+    min-width: 1080px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .container .nav__banderas {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container .nav__banderas-1 {
+    background-color: #ff5959;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 140px;
+    width: 80px;
+  }
+  .container .nav__banderas-2 {
+    background-color: #6199af;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 4px;
+    height: 70px;
+    width: 70px;
+  }
+  .container .nav__banderas-2:hover {
+    height: 140px;
+  }
+  .container .nav__banderas-3 {
+    background-color: #f6b436;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+  }
+  .container .nav__banderas-3:hover {
+    height: 140px;
+  }
+  .container .nav__person-enter {
+    display: block;
+    font-weight: 400;
+    color: #2e2925;
+    font-size: 13px;
+  }
+  .container .nav__person {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .nav__person:hover p {
+    color: #ff5959;
+  }
+  .container .nav__person-img {
+    margin-right: 10px;
+  }
+  .container .nav__search {
+    display: none;
+  }
+  .container .nav__media {
+    display: flex;
+    align-items: center;
+    width: 275px;
+  }
+  .container .nav__media-list {
+    list-style: none;
+    display: flex;
+  }
+  .container .nav__media-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .nav__media-list span {
+    width: 25px;
+    height: 20px;
+    margin: 0 7px;
+  }
+  .container .nav__media-list span:hover {
+    background-position-y: -500px;
+  }
+  .container .nav__facebook {
+    background: url(assets/sprite.svg) -4px -540px no-repeat;
+  }
+  .container .nav__twitter {
+    background: url(assets/sprite.svg) -40px -540px no-repeat;
+  }
+  .container .nav__instagram {
+    background: url(assets/sprite.svg) -75px -540px no-repeat;
+  }
+  .container .nav__pinterest {
+    background: url(assets/sprite.svg) -110px -540px no-repeat;
+  }
+  .container .nav__youtube {
+    background: url(assets/sprite.svg) -180px -540px no-repeat;
+  }
+  .container .nav__buy-group {
+    width: 100px;
+  }
+}
+
 .container .main-title {
   width: 100vw;
   padding: 50px 0 120px;
   margin-top: 30px;
   display: flex;
   justify-content: center;
+
 }
 .container .main-title__logo-desktop {
   display: none;
@@ -306,7 +442,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1110px;
+    max-width: calc(1080px + 30px);
+
   }
   .container .main-content .brand__list li {
     height: 75px;
@@ -436,6 +573,10 @@ body {
   .container .footer .delivery__container div {
     width: 25%;
     padding: 0;
+  }
+  .container .footer .delivery__container h2 {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .container .footer .form {
@@ -697,6 +838,7 @@ body {
   .container .footer .wrap-contact-web .about__wrap .about__buy {
     margin-right: 5px;
   }
+
 }
 @media screen and (min-width: 600px) {
   .container .main-title {
@@ -822,3 +964,4 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
