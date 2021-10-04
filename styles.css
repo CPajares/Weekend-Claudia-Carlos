@@ -239,6 +239,9 @@ body {
   display: flex;
   align-items: center;
 }
+.container .main-title__wrap-novedades-icons {
+  display: none;
+}
 .container .main-content {
   width: 100vw;
   justify-content: flex-end;
@@ -277,7 +280,7 @@ body {
 }
 .container .main-content .party__wrap-text:hover {
   -webkit-text-decoration-color: #67635f;
-  text-decoration-color: #67635f;
+          text-decoration-color: #67635f;
 }
 .container .main-content .party__text-fiesta-wrap {
   display: flex;
@@ -352,7 +355,7 @@ body {
     height: 159.5px;
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-clip-path: polygon(0% 0, 0 100%, 100% 100%);
-    clip-path: polygon(0% 0, 0 100%, 100% 100%);
+            clip-path: polygon(0% 0, 0 100%, 100% 100%);
   }
   .container .main-content .party__parrafo-fiesta {
     font-size: 14px;
@@ -575,7 +578,7 @@ body {
   border-bottom: 1px solid #bbb8b6;
   padding: 55px 0;
 }
-.container .footer .form__email {
+~ .container .footer .form__email {
   width: 100%;
   height: 40px;
 }
@@ -612,7 +615,7 @@ body {
 }
 .container .footer .form__privacy-style {
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 .container .footer .form button {
   height: 40px;
@@ -966,4 +969,4 @@ body {
   .container .main-title__logo-mobile {
     display: none;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
