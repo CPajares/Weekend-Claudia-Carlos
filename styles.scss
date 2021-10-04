@@ -4,6 +4,7 @@
 @import "mixin-delivery";
 @import "mixin-party";
 @import "mixin-contact";
+@import "mixin-header";
 
 * {
   box-sizing: border-box;
@@ -144,6 +145,9 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    &__logo-desktop {
+      display: none;
+    }
 
     &__container {
       min-width: 325px;
@@ -554,4 +558,5 @@ body {
   }
 }
 
-@include contact();
+@include contact;
+@include header;

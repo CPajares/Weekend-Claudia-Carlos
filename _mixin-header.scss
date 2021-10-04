@@ -1,0 +1,128 @@
+@import "variables";
+
+@mixin header {
+  @media screen and (min-width: 600px) {
+    .container {
+      .main-title {
+        min-width: $ComputerWidth;
+        display: flex;
+        justify-content: start;
+        &__text-novedades {
+          width: 122px;
+          height: 29.6px;
+          border: 1px solid black;
+        }
+        &__text-oferta {
+          width: 122px;
+          height: 29.6px;
+          border: 1px solid black;
+        }
+        &__buscas {
+          width: 122px;
+          height: 29.6px;
+          border: 1px solid black;
+        }
+        &__lupa {
+          width: 49px;
+          height: 29, 6px;
+          border: 1px solid black;
+        }
+        &__wrap-desktop {
+          display: flex;
+          justify-content: space-between;
+          width: 950px;
+          height: 198px;
+        }
+        &__wrap-novedades-icons {
+          width: 450px;
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        &__icon-utensilios {
+          width: 80px;
+          height: 80px;
+          background-image: url("assets/utensilios.png");
+          background-repeat: no-repeat;
+          background-size: 60%;
+          background-position: center;
+          background-color: $backgroundColorDelivery;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+        &__icon-ingredientes {
+          width: 80px;
+          height: 80px;
+          background-image: url("assets/magdalena.png");
+          background-repeat: no-repeat;
+          background-size: 60%;
+          background-position: center;
+          background-color: $backgroundColorDelivery;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+        &__icon-fiestas {
+          width: 80px;
+          height: 80px;
+          background-image: url("assets/tarta-cumpleanos.png");
+          background-repeat: no-repeat;
+          background-size: 60%;
+          background-position: center;
+          background-color: $backgroundColorDelivery;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+        &__icon-marcas {
+          width: 80px;
+          height: 80px;
+          background-image: url("assets/delantal.png");
+          background-repeat: no-repeat;
+          background-size: 60%;
+          background-position: center;
+          background-color: $backgroundColorDelivery;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+        &__icon-bocadillo {
+          width: 80px;
+          height: 80px;
+          background-image: url("assets/menu.svg");
+          background-repeat: no-repeat;
+          background-position: -320px 0;
+          background-size: 560px;
+          width: 80px;
+          background-color: $mainColor;
+          &:hover {
+            background-color: $backgroundColorDelivery;
+          }
+        }
+        &__wrap-icon {
+          display: flex;
+          width: 446px;
+          height: 80px;
+          justify-content: space-evenly;
+        }
+        &__wrap {
+          display: flex;
+        }
+        &__novedades {
+          display: flex;
+          width: 446px;
+          justify-content: space-between;
+        }
+        &__logo-desktop {
+          display: flex;
+          margin-left: 50px;
+        }
+        &__logo-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
