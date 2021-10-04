@@ -2,13 +2,25 @@
 
 @mixin party {
   @media (min-width: 600px) {
+    .main-content {
+      min-width: 1080px;
+    }
     .party {
       &__wrap-text {
         width: 220.6px;
         height: 160px;
       }
+      &__div-triangulo {
+        width: 100px;
+        height: 159.5px;
+        background-color: $backgroundColorPartyText;
+        clip-path: polygon(0% 0, 0 100%, 100% 100%);
+      }
+      &__fiestas-tematicas {
+      }
       &__parrafo-fiesta {
         font-size: 14px;
+        display: inline;
       }
       &__wrap-images {
         display: flex;
@@ -20,6 +32,8 @@
       &__rainbow {
         width: auto;
         height: 263px;
+        display: flex;
+        justify-content: end;
       }
       &__frozen {
         width: 628.32px;

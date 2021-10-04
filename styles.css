@@ -300,7 +300,7 @@ body {
 }
 
 .container .main-content .party__wrap-text {
-  position: absolute;
+  position: flex;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   cursor: pointer;
@@ -309,11 +309,16 @@ body {
 }
 
 .container .main-content .party__wrap-text h3 {
-  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .container .main-content .party__wrap-text h3:hover {
   text-decoration: underline;
+}
+
+.container .main-content .party__parrafo-fiesta {
+  display: none;
 }
 
 .container .main-content .party__ver-mas {
@@ -332,12 +337,23 @@ body {
 }
 
 @media (min-width: 600px) {
+  .container .main-content .main-content {
+    min-width: 1080px;
+  }
   .container .main-content .party__wrap-text {
     width: 220.6px;
     height: 160px;
   }
+  .container .main-content .party__div-triangulo {
+    width: 100px;
+    height: 159.5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-clip-path: polygon(0% 0, 0 100%, 100% 100%);
+            clip-path: polygon(0% 0, 0 100%, 100% 100%);
+  }
   .container .main-content .party__parrafo-fiesta {
     font-size: 14px;
+    display: inline;
   }
   .container .main-content .party__wrap-images {
     display: -webkit-box;
@@ -356,6 +372,12 @@ body {
   .container .main-content .party__rainbow {
     width: auto;
     height: 263px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .container .main-content .party__frozen {
     width: 628.32px;

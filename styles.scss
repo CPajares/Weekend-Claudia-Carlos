@@ -209,18 +209,22 @@ body {
         background-size: cover;
       }
       &__wrap-text {
-        position: absolute;
+        position: flex;
         background-color: $backgroundColorPartyText;
         z-index: 1;
         cursor: pointer;
         padding: 20px;
         color: $fontColor;
         h3 {
-          margin: 0;
+          margin-bottom: 5px;
+          font-size: 18px;
           &:hover {
             text-decoration: underline;
           }
         }
+      }
+      &__parrafo-fiesta {
+        display: none;
       }
 
       &__ver-mas {
