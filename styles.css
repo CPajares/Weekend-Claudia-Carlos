@@ -40,6 +40,10 @@ body {
           align-items: center;
 }
 
+.container .nav__banderas {
+  display: none;
+}
+
 .container .nav__links {
   margin: 0 auto;
   min-width: 325px;
@@ -74,14 +78,20 @@ body {
   cursor: pointer;
 }
 
+
 .container .nav__person-container:hover span {
   background-position-x: -37px;
 }
 
 .container .nav__person {
+
   width: 27px;
   height: 27px;
   background: url(/assets/sprite.svg) 0 0 no-repeat;
+}
+
+.container .nav__person-enter {
+  display: none;
 }
 
 .container .nav__buy-group {
@@ -168,6 +178,57 @@ body {
   color: white;
 }
 
+@media (min-width: 600px) {
+  .container .nav__burger {
+    display: none;
+  }
+  .container .nav__links {
+    min-width: 1080px;
+    margin-left: 50px;
+  }
+  .container .nav__banderas {
+    display: flex;
+    top: 0;
+  }
+  .container .nav__banderas-1 {
+    background-color: #ff5959;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 125px;
+    width: 75px;
+  }
+  .container .nav__banderas-2 {
+    background-color: #6199af;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 4px;
+    height: 70px;
+    width: 60px;
+  }
+  .container .nav__banderas-3 {
+    background-color: #f6b436;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70px;
+    width: 60px;
+  }
+  .container .nav__person-enter {
+    display: block;
+  }
+  .container .nav__person {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .nav__search {
+    display: none;
+  }
+}
+
 .container .main-title {
   width: 100vw;
   padding: 50px 0 120px;
@@ -250,6 +311,9 @@ body {
 }
 
 .container .main-content .party__wrap-text:hover {
+
+  text-decoration: underline;
+
   -webkit-text-decoration-color: #67635f;
           text-decoration-color: #67635f;
 }
@@ -387,6 +451,9 @@ body {
     width: 306.66px;
     height: auto;
   }
+  .container .main-content .party__search {
+    display: none;
+  }
 }
 
 .container .main-content .brand {
@@ -455,11 +522,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+
     max-width: calc(1080px + 30px);
   }
   .container .main-content .brand__list li {
@@ -639,6 +711,10 @@ body {
   .container .footer .delivery__container div {
     width: 25%;
     padding: 0;
+  }
+  .container .footer .delivery__container h2 {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -1001,5 +1077,6 @@ body {
   .container .footer .wrap-contact-web .about__wrap .about__buy {
     margin-right: 5px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+
+}/*# sourceMappingURL=styles.css.map */
+
