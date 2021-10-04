@@ -68,6 +68,9 @@
         width: auto;
         justify-content: space-between;
         align-items: center;
+        &:hover p {
+          color: $mainColor;
+        }
       }
 
       &__person-img {
@@ -98,6 +101,9 @@
           width: 25px;
           height: 20px;
           margin: 0 7px;
+          &:hover {
+            background-position-y: -500px;
+          }
         }
       }
 
